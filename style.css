@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* write your CSS here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(148, 38%, 91%);
+  min-height: 100lvh;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+main {
+  background-color: white;
+  border-radius: 25px;
+  padding: 0px 50px 50px 50px;
+}
+.name {
+  display: flex;
+  margin-bottom: 15px;
+}
+.mail,
+.querytype,
+.message {
+  margin-bottom: 15px;
+}
+h2 {
+  padding: 20px 0px 20px 0px;
+  text-transform: capitalize;
+}
+#email {
+  width: 95%;
+  box-sizing: border-box;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+#first,
+#second,
+#mail,
+#query,
+#message,
+#footer {
+  color: hsl(0, 66%, 54%);
+  font-size: 12px;
+}
+label {
+  text-transform: capitalize;
+}
+#fname,
+#lname {
+  height: 45px;
+  width: 90%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+#ge,
+#sr {
+  height: 40px;
+  width: 90%;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: 1px solid black;
+  margin-top: 10px;
+  background-color: transparent;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.ge,
+.sr {
+  width: 100%;
+}
+.query {
+  display: flex;
+}
+#qt {
+  display: none;
+}
+#radio,
+#rad {
+  margin-right: 8px;
+}
+#age {
+  width: 95%;
+  height: 80px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+input,
+textarea,
+button {
+  outline: none;
+  box-sizing: border-box;
+}
+
+#check {
+  margin-right: 10px;
+}
+#submit {
+  margin-top: 25px;
+  width: 95%;
+  border-radius: 5px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: hsl(169, 82%, 27%);
+}
+.appear {
+  display: none;
+}
+.success {
+  background-color: hsl(169, 89%, 11%);
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+  width: 400px;
+  padding: 20px;
+  width: auto;
+}
+.sm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10lvh;
+}
+p {
+  font-size: 13px;
+}
+img {
+  float: left;
+  margin-right: 10px;
+}
+h5 {
+  font-size: 16px;
+}
+/* HOVER */
+input,
+button,
+textarea {
+  cursor: pointer;
+}
+
+#fname:hover,
+#lname:hover {
+  border: 1px solid hsl(169, 82%, 27%);
+}
+
+#submit:hover {
+  background-color: hsl(169, 89%, 11%);
+}
+
+#foot:hover {
+  cursor: pointer;
+}
+
+/* SMALL SCREENS */
+@media (max-width: 375px) {
+  body {
+    /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100lvh;
+  }
+  main {
+    padding: 10;
+  }
+  .name {
+    display: block;
+  }
+  #email {
+    width: 100%;
+  }
+  #age {
+    width: 100%;
+  }
+  #submit {
+    width: 100%;
+  }
+  #fname,
+  #lname {
+    width: 100%;
+  }
+  #ge,
+  #sr {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .query {
+    display: block;
+  }
+}

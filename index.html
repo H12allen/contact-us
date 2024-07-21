@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,300&display=swap"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="body">
+      <div class="sm">
+        <div class="success">
+          <img src="/assets/images/icon-success-check.svg" alt="" />
+          <h5>Message sent!</h5>
+          <p>Thanks for completing the form. We'll get in touch soon!</p>
+        </div>
+      </div>
+      <main>
+        <h2>contact us</h2>
+        <div class="name">
+          <div class="first">
+            <label for="fname">first name</label><br />
+            <input type="text" name="" id="fname" /><br />
+            <span id="first">This field is required</span>
+          </div>
+          <div class="second">
+            <label for="lname">last name</label><br />
+            <input type="text" name="" id="lname" /><br />
+            <span id="second">This field is required</span>
+          </div>
+        </div>
+        <div class="mail">
+          <label for="email">email address</label><br />
+          <input type="email" name="" id="email" /><br />
+          <span id="mail">Please enter a valid email address</span>
+        </div>
+        <div class="querytype">
+          <label for="qtype">query type</label><br />
+          <div class="query">
+            <div class="ge">
+              <button id="ge">
+                <input type="radio" name="" id="radio" />general enquiry
+              </button>
+            </div>
+            <div class="sr">
+              <button id="sr">
+                <input type="radio" name="" id="rad" />support request
+              </button>
+            </div>
+          </div>
+          <span id="query">Please enter a query type</span>
+        </div>
+        <div class="message">
+          <label for="message">message</label><br />
+          <textarea name="" id="age"></textarea><br />
+          <span id="message">This field is required</span>
+        </div>
+        <div class="foot">
+          <input type="checkbox" name="" id="check" />
+          <span id="foot">I consent to being contacted by the team</span><br />
+          <span id="footer"
+            >To sumbit this form, please consent to being contacted
+          </span>
+        </div>
+
+        <button id="submit">Submit</button>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
